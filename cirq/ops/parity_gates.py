@@ -98,6 +98,10 @@ class XXPowGate(eigen_gate.EigenGate,
             wire_symbols=('XX', 'XX'),
             exponent=self._diagram_exponent(args))
 
+    #return representation in QUIL
+    def _quil__(self):
+
+
     def __str__(self) -> str:
         if self._global_shift == -0.5:
             if self._exponent == 1:
